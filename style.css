@@ -1,0 +1,508 @@
+* { 
+    margin: 0; /*Margem externa*/
+    padding: 0; /*Margem interna*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Suavisa o scroll na movimentação da página */
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/*SESSÃO 0 -----------------------NAVBAR---------------------------------------------- */
+ 
+
+nav { /* Toda a NAVBAR */
+    background-color: rgb(64, 141, 219);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav_bar a { /* Links da NAVBAR */
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    padding-block: 2px;
+}
+
+.nav_bar a:active { /* Quando os links são clicados */
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.nav_esquerda a { /* Meu nome (tbm serve como Home) */
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.nav_direita a { /* Demais links */
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav_direita a:hover { /* Efeitos pra quando passar o mouse em cima */
+    background-color: rgba(236, 236, 236, 0.163);
+    box-shadow: 0 0 0 6px rgba(236, 236, 236, 0.163);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.botao_responsivo {
+    display: none; /* Faz o botão ficar oculto */
+    border: none;
+    background: none;
+    border-top: 3px solid rgb(237, 237, 237);
+}
+
+.botao_responsivo::before, .botao_responsivo::after {
+    content: " "; /* Estilização das barras do botão */
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: rgb(237, 237, 237);
+    margin-top: 6px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.botao_responsivo:active {
+    opacity: 0.5;
+    transition: 0.3s;
+    background-color: rgba(236, 236, 236, 0.163);
+    box-shadow: 0 0 0 20px rgba(236, 236, 236, 0.163);
+}
+
+
+/*SESSÃO 1 -----------------------ÍNICIO---------------------------------------------- */
+ 
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px; /*Espaçamento na direita e esquerda*/
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 120px; /*Espaço entre essa sessão e a próxima*/
+}
+
+#inicio .texto_pessoal {
+    flex: 5;
+}
+
+#inicio .texto_pessoal h2 {
+    font-size: 42px;
+    color: rgb(64, 141, 219);
+    margin-bottom: 20px;
+}
+
+#inicio .foto {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+#inicio .foto img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/*SESSÃO 2 -----------------------TECNOLOGIAS---------------------------------------------- */
+
+#tecnologias {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+#tecnologias h2 {
+    color: rgb(64, 141, 219);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.texto_tecnologias {
+    display: flex;
+    text-align: start;
+    margin-bottom: 23px; /*Espaçamento entre o texto e as células*/
+   
+}
+
+.celulas_tec {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Faz as células obedecerem o tamanho que tiver na tela */
+    margin-bottom: 130px;
+}
+
+.cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Dá uma emegrecida no html e css */
+}
+
+.celulas_tec .cell {
+    width: 160px;
+    height: 80px; /* Define o tamanho das células */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 10px; /* Espaçamento entre cada célula */
+    
+}
+
+
+/*SESSÃO 3 -----------------------PROJETOS---------------------------------------------- */
+
+#projetos h2 {
+    color: rgb(64, 141, 219);
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.bloco_projetos {
+    display: flex;
+    flex-wrap: wrap; /* Fazendo com que os blocos se ordenem dependendo do tamanho da tela */
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+
+.projeto {
+    padding: 16px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    max-width: 350px;
+    background-color: #f5f5f5;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    height: 520px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto h3 { /*Título do projeto */
+    margin-top: 12px;
+    color: rgb(64, 141, 219);
+    display: flex;
+    justify-content: center;
+}
+
+.projeto p {
+    margin: 10px;
+    font-size: 14.5px;
+}
+
+.projeto .botao_projeto {
+    margin-top: auto;
+    display: flex;
+    justify-content: end; 
+
+}
+
+.projeto a {
+    padding: 6px 12px;
+    background-color: rgb(234, 234, 234);
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border: #333 solid 1px;
+}
+
+.projeto a:hover {
+    background-color: rgb(101, 174, 248);
+    color: #f5f5f5;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.171);
+}
+
+.projeto i {
+    padding-right: 7px; /*Espaçamento entre ícone e o nome "Github" */
+}
+
+
+/*SESSÃO 4 -----------------------CONTATO---------------------------------------------- */
+
+#contato {
+    padding: 0 50px;
+    margin-bottom: 80px;
+}
+
+#contato h2 {
+    color: rgb(64, 141, 219);
+    font-size: 33px;
+    margin-bottom: 8px;
+}
+
+.bloco_contato {
+    display: flex;
+    gap: 50px;
+}
+
+#whatsapp-logo {
+    color: rgb(40, 172, 47);
+}
+
+#github-logo {
+    color: rgb(58, 68, 255);
+}
+
+#linkedin-logo {
+    color: rgb(64, 141, 219);
+}
+
+#email-logo {
+    color: rgb(46, 110, 177);
+    margin-right: 0;
+}
+
+.bloco_contato .contato_esquerda .redes_sociais {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto; /* Faz com que seja criada uma barra de rolagem horizontal caso a tela seja menor que os 4 ícones da fileira */ 
+}
+.bloco_contato .contato_esquerda i {
+    background-color: #dbe1e8;
+    font-size: 32px;
+    border-radius: 20px;
+    padding: 17px;
+    margin: 18px 40px 0 0;
+}
+
+.bloco_contato .contato_esquerda i:hover {
+    transition: 0.2s;
+    background-color: rgb(203, 222, 236);
+}
+
+.bloco_contato .texto_contato {
+    margin-top: 10px;
+}
+
+.bloco_contato .contato_esquerda {
+    flex: 2;
+}
+
+.bloco_contato .contato_direita {
+    flex: 2;
+}
+
+.bloco_contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    font-family: "Poppins", sans-serif; /* O que a pessoa digitar vai ficar nessa fonte */
+    border: 2px solid rgb(121, 121, 121);
+    background-color: rgb(234, 234, 234);
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    transition: 0.2s ease;
+    resize: none; /* remove a opção de mudar o tamanho da textearea */
+    color: black;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid rgb(64, 141, 219);
+    box-shadow: 4px 4px 8px rgba(54, 105, 160, 0.589);
+}
+
+form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #f5f5f5;
+    background-color: rgb(64, 141, 219);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+form button:hover {
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.171);
+    background-color: #3fbb75;
+    transition: 0.2s ease;
+}
+
+#mensagem-confirmacao {
+    display: none;
+    background-color: #cbf6d5;
+    color: #36964d;
+    
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1)
+}
+
+/* ------------------------ @media ----------------------------------------------*/
+
+@media (max-width: 1040px) {
+
+    #inicio .texto_pessoal h2 {
+        font-size: 33px;
+    }
+
+    #inicio .foto img {
+    width: 300px;
+    }
+
+}
+
+@media (max-width: 890px) {
+
+    #contato .bloco_contato {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 752px) {
+
+    #inicio {
+        flex-direction: column-reverse;
+        padding: 0 30px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    #inicio .texto_pessoal h2 {
+        font-size: 30px;
+    }
+
+    .texto_tecnologias {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #tecnologias {
+        padding: 0 30px;
+    }
+
+    #tecnologias h2 {
+        font-size: 30px;
+    }
+    
+    .celulas_tec .cell {
+        font-size: 15px;
+    }
+
+    #contato {
+        padding: 0 30px;
+        margin-bottom: 37px;
+    }
+ 
+}
+
+@media (max-width: 620px) {
+
+    /*NAVBAR RESPONSIVA------------------------------------------------------------------- */
+    
+    nav {
+        padding: 0 40px; /*Ajusta o espaçamento entre os itens da Nav e a borda da tela*/
+    }
+
+    .nav_direita a { /*Estilização dos links de redirecionamento*/
+       font-size: 25px;
+       padding: 20px; /* Aumenta a área de click */
+    }
+
+    .botao_responsivo {
+        display: block; /* p/ remover o "display: none" de antes, que fazia o botão desaparecer */
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .nav_direita {
+        display: flex; /* Para ativar as propiedades de FlexBox */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        background-color: rgb(64, 141, 219);
+
+        visibility: hidden; /* Esconde a bolinha enquanto não for ativada */
+        opacity: 0;
+        clip-path: circle(100px at 90% -15%); /* Círculo que fica no canto, perto do botão */
+        transition: clip-path 1s ease-out, opacity 0.4s ease 1s, visibility 0s linear 1.4s;
+
+        pointer-events: none; /* Faz com que esse elemento fique sem interação */
+
+        flex-direction: column; /* Alinha na vertical */
+        justify-content: space-around; /* Alinha na horizontal */
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav_bar.active .nav_direita {
+        clip-path: circle(1500px at 90% -15%); /* Efeito de círculo quando clica no botão */
+        pointer-events: all;
+
+        visibility: visible; /* Fica visível após a ativação */
+        opacity: 1;
+        transition: clip-path 1s ease-out, visibility 0s, opacity 0s;
+    }
+
+    .nav_bar.active .botao_responsivo {
+        position: relative;
+        border-top-color: transparent; /* Faz sumir a barra de cima, deixando só as 2 do "X" */
+    }
+
+    /* GIRO DAS BARRAS QUE FORMAM O "X" */
+
+    .nav_bar.active .botao_responsivo::before {
+        transform: rotate(135deg);
+    }
+    .nav_bar.active .botao_responsivo::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media (max-width: 470px) {
+
+    #inicio .foto img {
+    width: 250px;
+    }
+
+    .bloco_contato .contato_esquerda i {
+        font-size: 23px;
+        padding: 15px;
+        margin: 18px 20px 0 0;
+    }
+
+}
+
+@media (max-width: 355px) {
+    .bloco_contato .contato_esquerda i {
+        margin: 18px 15px 0 0;
+    }
+}
