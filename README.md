@@ -1,4 +1,4 @@
-# Portfólio Pessoal
+# 💻 Portfólio Pessoal
 
 Este repositório reúne o código-fonte do meu **portfólio web pessoal**, desenvolvido com **HTML**, **CSS** e **JavaScript** para apresentar meu perfil profissional, minhas principais tecnologias e alguns dos projetos que venho construindo ao longo da minha formação em desenvolvimento de software.
 
@@ -6,13 +6,13 @@ Este repositório reúne o código-fonte do meu **portfólio web pessoal**, dese
 
 ## Visualização
 
-[Clique aqui para visualizar o portfólio](https://matheus-machado750.github.io/portfolio/)
+[Clique aqui para visualizar o portfólio (Ctrl + clique para abrir em uma nova aba)](https://matheus-machado750.github.io/portfolio/)
 
 O site está disponível online e pode ser acessado diretamente pelo navegador, sem necessidade de instalação ou configuração local.
 
 ---
 
-## Sobre o Projeto
+## 📖 Sobre o Projeto
 
 Este portfólio foi desenvolvido com o objetivo de centralizar, em um único ambiente, minha apresentação profissional como estudante e desenvolvedor em formação. A proposta do projeto é oferecer uma navegação simples, visualmente organizada e direta, permitindo que recrutadores, avaliadores técnicos ou visitantes em geral entendam rapidamente quem eu sou, com quais tecnologias trabalho e quais projetos já desenvolvi.
 
