@@ -1,8 +1,8 @@
-# 💻 Portfólio Pessoal
+# Portfólio Pessoal
 
 Este repositório reúne o código-fonte do meu **portfólio web pessoal**, desenvolvido com **HTML**, **CSS** e **JavaScript** para apresentar meu perfil profissional, minhas principais tecnologias e alguns dos projetos que venho construindo ao longo da minha formação em desenvolvimento de software.
 
-![Imagem do portfólio](imagem_do_portfolio.png)
+![Imagem do portfólio](print_portfolio.png)
 
 ## Visualização
 
