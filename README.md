@@ -23,31 +23,25 @@ A estrutura da página foi pensada para destacar de forma objetiva os pontos mai
 ## Principais Seções
 
 ### Início
-- Apresentação pessoal e resumo do meu foco em desenvolvimento back-end.
-- Destaque para minha formação atual e objetivo profissional.
+Seção de apresentação pessoal, com um resumo do meu perfil, área de interesse e objetivo profissional atual na área de desenvolvimento.
 
 ### Tecnologias
-- Exibição visual das principais tecnologias com as quais trabalho.
-- Resumo das ferramentas e linguagens que utilizo com maior frequência no desenvolvimento de projetos.
+Área dedicada às principais tecnologias que utilizo, com foco nas ferramentas, linguagens e recursos que fazem parte da minha stack atual.
 
 ### Projetos
-- Área dedicada à apresentação de projetos desenvolvidos por mim.
-- Cards com imagem, descrição resumida e link para o código no GitHub.
+Seção voltada à exibição dos projetos que desenvolvi, com imagem ilustrativa, descrição resumida e link para o respectivo repositório no GitHub.
 
 ### Contato
-- Links diretos para redes profissionais e canais de comunicação.
-- Formulário integrado para envio de mensagem via email.
+Espaço destinado aos meus canais de comunicação, reunindo redes profissionais e formulário para envio direto de mensagem por email.
 
 ---
 
 ## ⚙️ Stack e Tecnologias
 
-- **HTML** — responsável pela estruturação semântica do conteúdo da página.
-- **CSS** — utilizado para estilização visual, organização do layout e adaptação da interface a diferentes larguras de tela.
-- **JavaScript** — responsável pelas interações da página, como o menu responsivo e o comportamento visual do formulário de contato.
-- **Font Awesome** — utilizado para os ícones das redes sociais e elementos visuais.
-- **Google Fonts** — utilizado para aplicação da tipografia do projeto.
-- **GitHub Pages** — utilizado para publicar o portfólio online.
+- **HTML**: utilizado para estruturar semanticamente o conteúdo da página.
+- **CSS**: responsável pela estilização visual e pela organização do layout.
+- **JavaScript**: utilizado nas interações da interface, como o menu responsivo e o formulário de contato.
+- **GitHub Pages**: utilizado para publicar o portfólio online.
 
 ---
 
