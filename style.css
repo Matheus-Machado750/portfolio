@@ -183,7 +183,7 @@ nav { /* Toda a NAVBAR */
 
 .projeto {
     padding: 16px;
-    border: 2px solid #333;
+    border: 1.5px solid #8e8e8e;
     border-radius: 10px;
     max-width: 350px;
     background-color: #f5f5f5;
@@ -227,7 +227,7 @@ nav { /* Toda a NAVBAR */
     border-radius: 50px;
     font-size: 0.9rem;
     transition: 0.3s;
-    border: #333 solid 1px;
+    border: #919191 solid 1px;
 }
 
 .projeto a:hover {
@@ -241,6 +241,60 @@ nav { /* Toda a NAVBAR */
 }
 
 /*SESSÃO 4 -----------------------EXPERIÊNCIAS---------------------------------------------- */
+
+#experiencias h2 {
+    color: rgb(64, 141, 219);
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.bloco_experiencias {
+    display: flex;
+    flex-wrap: wrap; /* Fazendo com que os blocos se ordenem dependendo do tamanho da tela */
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+
+.experiencia {
+    padding: 16px;
+    border: 1.5px solid #8e8e8e;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experiencia_linha_superior {
+    display: flex;
+    flex-direction: row;
+}
+
+.experiencia img {
+    height: 57px;
+    width: 57px;
+    border-radius: 6px;
+    margin: 7px 0 0 7px;
+}
+
+.experiencia h3 {
+    margin-top: 14px;
+    color: rgb(64, 141, 219);
+    display: flex;
+    margin-left: 27px;
+    font-size: 23px;
+}
+
+.experiencia p {
+    margin: 10px;
+    font-size: 15.5px;
+}
 
 /*SESSÃO 5 -----------------------CONTATO---------------------------------------------- */
 
