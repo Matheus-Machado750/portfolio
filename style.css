@@ -258,6 +258,7 @@ nav { /* Toda a NAVBAR */
 }
 
 .experiencia {
+    margin: 0 20px;
     padding: 16px;
     border: 1.5px solid #8e8e8e;
     border-radius: 10px;
@@ -476,7 +477,7 @@ form button:hover {
  
 }
 
-@media (max-width: 620px) {
+@media (max-width: 680px) {
 
     /*NAVBAR RESPONSIVA------------------------------------------------------------------- */
     
@@ -539,6 +540,83 @@ form button:hover {
     .nav_bar.active .botao_responsivo::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+}
+
+
+/* Responsividade dos cards de experiências */
+@media (max-width: 550px) {
+
+    #experiencias .bloco_experiencias {
+        gap: 24px;
+    }
+
+    #experiencias .experiencia {
+        width: calc(100% - 40px);
+        max-width: none;
+        height: 490px;
+        margin: 0 20px;
+        padding: 14px;
+        justify-content: flex-start;
+    }
+
+    #experiencias .experiencia_linha_superior {
+        align-items: center;
+        gap: 14px;
+    }
+
+    #experiencias .experiencia img {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    #experiencias .experiencia h3 {
+        margin: 0;
+        min-width: 0;
+        color: rgb(64, 141, 219);
+        font-size: clamp(1.05rem, 4.2vw, 1.25rem);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    #experiencias .experiencia p {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        margin: 14px 0 0;
+        padding: 0 8px 8px 0;
+        font-size: 0.93rem;
+        line-height: 1.6;
+
+        scrollbar-width: thin;
+        scrollbar-color: rgba(64, 141, 219, 0.7) transparent;
+    }
+
+    #experiencias .experiencia p::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    #experiencias .experiencia p::-webkit-scrollbar-thumb {
+        background-color: rgba(64, 141, 219, 0.7);
+        border-radius: 10px;
+    }
+}
+
+/* Celulares muito estreitos, como Mobile S */
+@media (max-width: 390px) {
+
+    #experiencias .experiencia {
+        height: 520px;
+    }
+
+    #experiencias .experiencia h3 {
+        font-size: 1rem;
+    }
+
+    #experiencias .experiencia p {
+        font-size: 0.9rem;
     }
 }
 
